@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru" w-tid="1">
+<head w-tid="3">
+<meta charset="utf-8" w-tid="5"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" w-tid="7"/>
+  <meta name="theme-color" content="#101722" w-tid="9"/>
+  <link rel="icon" href="data:," w-tid="11"/>
+  <title w-tid="13">Наш куратор</title>
+  <link rel="stylesheet" href="style.css" w-tid="15"/>
+</head>
+<body w-tid="17">
+  <main class="shell" w-tid="19">
+    <header class="topbar" w-tid="21"><span class="brand" w-tid="23"><i w-tid="25"></i> НАШ КУРАТОР</span><span class="chapter" id="chapter" w-tid="27">Утро Владимира Ивановича</span><button class="menu-button" id="menuButton" aria-label="Меню" w-tid="29">ESC</button></header>
+    <section class="stage" id="stage" aria-label="Игровая сцена" w-tid="31">
+      <canvas id="game" width="640" height="360" aria-label="Игровой экран" w-tid="33"></canvas>
+      <div class="hud" w-tid="35"><span id="objective" w-tid="37"></span><span id="hint" w-tid="39"></span></div>
+      <div class="overlay-scene" id="overlayScene" hidden w-tid="41"></div>
+      <section class="dialogue" id="dialogue" hidden aria-live="polite" w-tid="43">
+        <div class="portrait-wrap" w-tid="45"><img id="portrait" alt w-tid="47"/><span class="portrait-glint" w-tid="49"></span></div>
+        <div class="dialog-copy" w-tid="51"><div class="speaker" id="speaker" w-tid="53"></div><p id="line" w-tid="55"></p><div class="continue" w-tid="57">ENTER <span w-tid="59">или щелчок</span> <b w-tid="61">›</b></div></div>
+      </section>
+      <div class="toast" id="toast" aria-live="polite" w-tid="63"></div>
+      <div class="pause" id="pause" hidden w-tid="65"><div class="pause-card" w-tid="67"><span class="eyebrow" w-tid="69">ПЕРЕРЫВ МЕЖДУ ПАРАМИ</span><h1 w-tid="71">Пауза</h1><button id="resumeButton" w-tid="73">Продолжить</button><button class="secondary" id="restartButton" w-tid="75">Начать сначала</button><small w-tid="77">ESC · вернуться в игру</small></div></div>
+      <div class="ending-card" id="endingCard" hidden w-tid="79"><button id="againButton" aria-label="Начать сначала" title="Начать сначала" w-tid="93"><span w-tid="95">↻</span></button></div>
+    </section>
+    <footer class="controls" w-tid="97"><span w-tid="119"><kbd w-tid="121">E</kbd> <em w-tid="123">взаимодействовать</em></span><span w-tid="125"><kbd w-tid="127">ENTER</kbd> <em w-tid="129">дальше</em></span><span><kbd>МЫШЬ</kbd> <em>навести на папку — открыть</em></span></footer>
+  </main>
+  <script src="game.js?v=11"></script>
+</body>
+</html>
